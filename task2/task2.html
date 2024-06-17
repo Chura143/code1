@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+       * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('img1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: transparent;
+}
+
+header.container {
+  height: 10vh;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.logo {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.logo img {
+  height: 35px;
+  width: 30px;
+}
+
+.logo p {
+  font-family: Georgia, 'Sans-Serif', serif;
+  font-size: 20px;
+  font-weight: 550;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  display: flex;
+  gap: 14px;
+  list-style: none;
+}
+
+li {
+  font-size: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+}
+
+.main {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+}
+
+.main img {
+  display: block;
+  margin: auto;
+  height: 100%;
+  filter: drop-shadow(20px 20px 40px rgba(0, 0, ,150 0.859));
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.content .container {
+  width: 300px;
+  margin: auto;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  color:white;
+}
+
+.todo_value {
+  flex-grow: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: 'Lucida Sans', 'Sans-Serif', serif;
+  font-size: 15px;
+  font-weight: bold;
+  border-bottom: 2px solid rgb(94, 41, 21);
+}
+
+.todo_checkbox {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.todo:checked + .todo_value {
+  color: rgb(84, 35, 0);
+  background: rgba(0, 0, 0, 0.13);
+  text-decoration: line-through 1.5px;
+  order: 1;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+        <nav class="container">
+          <div class="logo">
+            <img src="finix1.jpg" alt="ToDoList">
+            <p>toDo List</p>
+          </div>
+          <ul>
+            <li><a href="ToDo.html">Home</a></li>
+            <li><a href="main">Contacts</a></li>
+            <li><a href="main">Sign in</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="main">
+        <img src="sun.jpg" alt="scroll image">
+        <div class="content">
+          <div class="container">
+            <div class="todo">
+              <input class="todo_value" type="text" placeholder="(empty)">
+              <input class="todo-checkbox" type="checkbox">
+            </div>
+            <div class="todo">
+              <input class="todo_value" type="text" placeholder="(empty)">
+              <input class="todo-checkbox" type="checkbox">
+            </div>
+            <div class="todo">
+              <input class="todo_value" type="text" placeholder="(empty)">
+              <input class="todo-checkbox" type="checkbox">
+            </div>
+            <div class="todo">
+              <input class="todo_value" type="text" placeholder="(empty)">
+              <input class="todo-checkbox" type="checkbox">
+            </div>
+            <div class="todo">
+              <input class="todo_value" type="text" placeholder="(empty)">
+              <input class="todo-checkbox" type="checkbox">
+            </div>
+            
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
